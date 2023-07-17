@@ -1,0 +1,226 @@
+.nav-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  position: fixed;
+  background: #441e59;
+  width: 100%;
+  z-index: 2;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: #441e59;
+  padding: 15px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #f0ff23;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: #e2f108;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+  color: #ffffff;
+}
+
+/* My Account */
+.icons-size {
+  color: #333;
+  font-size: 14px;
+}
+.acc-action {
+  position: fixed;
+  right: 30px;
+  top: 9px;
+  z-index: 1;
+}
+.acc-action .acc-profile {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  width: 60px;
+}
+.acc-action .acc-profile img {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  height: 80.5%;
+}
+
+.acc-action .acc-menu {
+  background-color: #fff;
+  box-sizing: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 20px;
+  position: absolute;
+  right: -10px;
+  width: 200px;
+  transition: 0.5s;
+  top: 120px;
+  visibility: hidden;
+  opacity: 0;
+}
+.acc-action .acc-menu.active {
+  opacity: 1;
+  top: 55px;
+  visibility: visible;
+}
+.acc-action .acc-menu::before {
+  background-color: #fff;
+  content: "";
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  transform: rotate(45deg);
+  top: -5px;
+  width: 20px;
+}
+
+.acc-action .acc-menu h3 {
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3em;
+  padding: 20px 0px;
+  text-align: left;
+  width: 100%;
+}
+.acc-action .acc-menu h3 div {
+  color: #818181;
+  font-size: 14px;
+  font-weight: 400;
+}
+.acc-action .acc-menu ul li {
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 10px 0px;
+}
+.acc-action .acc-menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.acc-action .acc-menu ul li a {
+  display: inline-block;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  z-index: 1;
+}
+.acc-action .acc-menu ul li:hover img {
+  opacity: 1;
+}
+.acc-action .acc-menu ul li:hover a {
+  color: #441e59;
+}
+
+/* Banner */
+.section-1 {
+  background: #fff;
+  height: 10vh;
+  display: flex;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  padding: 16px;
+  background: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .contnt {
+  padding-top: 102px;
+}
+
+/* About Section */
+
+.about {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.about .about-containt {
+  width: 100%;
+  margin: 5px auto;
+}
+
+.about .about-containt .about-aricle {
+  padding: 25px 25px;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.about .about-containt .about-aricle h2 {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+.about .about-containt .about-aricle p {
+  margin-top: 20px;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.about .about-containt .about-aricle a {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid #097ceb;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.about .about-containt .about-aricle a:hover {
+  background: #097ceb;
+  color: #ffff;
+  border-radius: 28px;
+  transition: 0.3s ease;
+}
+
+/* Responsive Media Query */
+/* Banner */
+
+@media (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .banner-header {
+    padding: 25px 36px;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 700px) {
+  .banner-header {
+    padding: 25px 36px;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+}

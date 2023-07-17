@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.content {
+  padding: 16px;
+  background: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .contnt {
+  padding-top: 102px;
+}
+
+.contact {
+  height: auto;
+  display: grid;
+  align-items: center;
+}
+.contact-wrap {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-in {
+  padding: 20px;
+}
+
+.contact-in:nth-child(1) {
+  flex: 30%;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.contact-in:nth-child(2) {
+  flex: 55%;
+  background: #f5f1f1;
+}
+
+.contact-in:nth-child(3) {
+  flex: 25%;
+  padding: 0;
+}
+
+.contact-in h1 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-in h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #441e59;
+  color: #ffff;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.contact-in p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contact-in ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-in ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-in ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.contact-in ul li a i {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+}
+
+.contact-in iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Media Query */
+
+/* Banner */
+
+@media (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .banner-header {
+    padding: 25px 36px;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 700px) {
+  .banner-header {
+    padding: 25px 36px;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+}
